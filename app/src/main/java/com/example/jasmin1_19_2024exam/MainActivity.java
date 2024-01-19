@@ -19,15 +19,10 @@ import com.example.jasmin1_19_2024exam.presentation.person.model.Person;
 import com.example.jasmin1_19_2024exam.presentation.person.adapter.PersonAdapter;
 import com.example.jasmin1_19_2024exam.presentation.friend.AddFriendActivity;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
 
+public class MainActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
 
