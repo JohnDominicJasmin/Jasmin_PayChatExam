@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         personListManager = new PersonListManager();
-        Toolbar toolbar = binding.personDetailsToolBar;
+        Toolbar toolbar = binding.updatePersonToolBar;
         toolbar.setTitleTextColor(getResources().getColor(R.color.white));
         setSupportActionBar(toolbar);
 

@@ -33,8 +33,7 @@ public class FriendAdapter extends RecyclerView.Adapter<FriendAdapter.FriendView
         Person friend = friends.get(position);
         String name = friend.getFirstName() + " " + friend.getLastName();
         String email = friend.getEmail();
-        String mobileNumber = friend.getMobile();
-        String address = friend.getAddress();
+
         holder.textName.setText("Name: " + name);
         holder.textEmail.setText("Email: " + email);
         holder.itemView.setOnClickListener(v -> {

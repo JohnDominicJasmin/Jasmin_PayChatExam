@@ -10,12 +10,13 @@ public class Person {
     private String address;
     private String email;
 
-    public Person(String first_name, String last_name, String email, String mobile, String address){
+    public Person(String first_name, String last_name, String email, String mobile, String address, int age){
         this.first_name = first_name;
         this.last_name = last_name;
         this.email = email;
         this.mobile = mobile;
         this.address = address;
+        this.age = age;
     }
 
 

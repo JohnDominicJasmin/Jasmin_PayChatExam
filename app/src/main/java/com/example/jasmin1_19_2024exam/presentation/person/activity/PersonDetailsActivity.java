@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.example.jasmin1_19_2024exam.JsonConfigUtil;
 import com.example.jasmin1_19_2024exam.R;
 import com.example.jasmin1_19_2024exam.presentation.friend.FriendsActivity;
+import com.example.jasmin1_19_2024exam.presentation.friend.UpdateFriendActivity;
 import com.example.jasmin1_19_2024exam.presentation.person.PersonListManager;
 import com.example.jasmin1_19_2024exam.presentation.person.model.Person;
 
@@ -48,7 +49,7 @@ public class PersonDetailsActivity extends AppCompatActivity {
         String address = getIntent().getStringExtra("address");
         int age = getIntent().getIntExtra("age", 0);
 
-        Toolbar toolbar = findViewById(R.id.personDetailsToolBar);
+        Toolbar toolbar = findViewById(R.id.updatePersonToolBar);
         toolbar.setTitleTextColor(getResources().getColor(R.color.white));
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Person Details");
@@ -75,7 +76,14 @@ public class PersonDetailsActivity extends AppCompatActivity {
         Button deleteButton = findViewById(R.id.delete_button);
 
         updateButton.setOnClickListener(v -> {
-
+            Intent intent = new Intent(v.getContext(), UpdateFriendActivity.class);
+            intent.putExtra("firstName", firstName);
+            intent.putExtra("lastName", lastName);
+            intent.putExtra("email", email);
+            intent.putExtra("number", phoneNumber);
+            intent.putExtra("address", address);
+            intent.putExtra("age", age);
+            v.getContext().startActivity(intent);
         });
 
         deleteButton.setOnClickListener(v -> {

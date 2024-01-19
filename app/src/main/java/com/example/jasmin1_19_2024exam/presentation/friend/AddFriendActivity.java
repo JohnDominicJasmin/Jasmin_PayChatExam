@@ -24,7 +24,7 @@ public class AddFriendActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_friend);
 
-        Toolbar toolbar = findViewById(R.id.personDetailsToolBar);
+        Toolbar toolbar = findViewById(R.id.updatePersonToolBar);
         toolbar.setTitleTextColor(getResources().getColor(R.color.white));
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Add Friend");

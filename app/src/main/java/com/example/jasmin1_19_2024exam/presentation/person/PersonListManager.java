@@ -41,7 +41,8 @@ public class PersonListManager {
                 String personEmail = jsonObjectPerson.getString("email");
                 String personNumber = jsonObjectPerson.getString("mobile");
                 String personAddress = jsonObjectPerson.getString("address");
-                Person person = new Person(firstName, lastName, personEmail, personNumber, personAddress);
+                int age = jsonObjectPerson.getInt("age");
+                Person person = new Person(firstName, lastName, personEmail, personNumber, personAddress, age);
                 if (!personExists(person)) {
                     persons.add(person);
                 }

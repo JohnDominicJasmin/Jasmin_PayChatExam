@@ -6,7 +6,7 @@
     tools:context=".presentation.person.activity.PersonDetailsActivity">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/personDetailsToolBar"
+        android:id="@+id/updatePersonToolBar"
         android:layout_width="0dp"
         android:layout_height="?attr/actionBarSize"
         android:background="#4CAF50"
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/personDetailsToolBar" />
+        app:layout_constraintTop_toBottomOf="@id/updatePersonToolBar" />
 
 
     <include
